@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/fajruddin-mudzakkir-TG50QzQzZm0-unsplash.jpg)  
+}
+
+.card {
+    background-color: black; 
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    opacity: 0.8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    bottom:0;
+    color: white;
+    -webkit-text-stroke: 0.3px black;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: antiquewhite;
+    transition: 0.3s ease-in-out;
+
+}
+
+button:hover {
+    background-color: black;
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    opacity: 0.8;
+}
+
+input.search-bar {
+    width: 100%;
+    font-size: 130%;
+    padding: 5px;
+}
+
+.description,
+.humidity,
+.wind {
+    margin: 5px auto;
+}
