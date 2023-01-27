@@ -41,7 +41,23 @@ async function displayWeather(city) {
         document.querySelector(".description").innerText = description.charAt(0).toUpperCase() + description.slice(1);
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = 'Wind Speed: ' + speed + " km/h";
-        };
+    };
+
+    // Search bar functionality 
+    const search = () => {
+        displayWeather(document.querySelector(".search-bar").value)
+    }
+
+    document.querySelector(".search-button").addEventListener("click", function() {
+        search();
+    })
+
+    document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+        if (event.key == "Enter") {
+            search();
+        }
+    })
+
         
     // Call function
     getData(cityData);
