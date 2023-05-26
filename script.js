@@ -1,6 +1,6 @@
 
 let weather = {
-    "apiKey": "17b858e552145f32ce10a3ea6e2ea98f"
+    "apiKey": ""
 }
 
 //Does the same as fetchWeather but this one is using .then and fetch
